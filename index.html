@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger Game</title>
+    <link rel="stylesheet" href="./ESTILOS/Frogger.css">
+</head>
+<body>
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>¡Bienvenido a Crossy Frogger!</p>
+            <p>Reglas del juego:</p>
+            <p>1. Mueve al jugador con las teclas de flecha.</p>
+            <p>2. Cruza la carretera y llega al objetivo sin ser golpeado por los coches.</p>
+            <p>3. Cada vez que llegues al objetivo, aumentará la velocidad de los coches.</p>
+            <p>¿A qué nivel llegarás?</p>
+        </div>
+    </div>
+    <div id="header">
+        <div class="title"><h1>Crossy Frogger</h1></div>
+        <div id="timer"></div>
+        <div id="level-display">Level: 0</div>
+    </div>
+    <div id="game-container">
+        <div class="frog" id="player"></div>
+        <div class="car" id="car1"></div>
+        <div class="car" id="car2"></div>
+        <div class="car" id="car3"></div>
+        <div class="goal" id="goal"></div>
+        
+    </div>
+    <button onclick="location.reload()">Reiniciar juego</button>
+    <script src="./JScipts/Frogger.js"></script>
+</body>
+</html>
